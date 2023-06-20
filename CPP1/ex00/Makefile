@@ -6,13 +6,13 @@ RM			= rm -rf
 
 SRCS		= main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 
-.c.o:
-		${CC} ${CFLAGS} -c $< -o $@
+.cpp.o:
+		${CC} ${FLAGS} -c $< -o $@
 
 OBJS		= ${SRCS:.cpp=.o}
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(OBJS)
+	$(CC) ${FLAGS} -o $(NAME) $(OBJS)
 
 all: $(NAME)
 

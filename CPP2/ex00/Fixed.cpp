@@ -10,5 +10,5 @@ Fixed& Fixed::operator=(const Fixed &fix)
 		this->_raw = fix.getRawBits();
 	return *this;
 }
-int		Fixed::getRawBits(void) const{std::cout << "getRawBits member fonction called" << std::endl;return this->raw;}
-void	Fixed::setRawBits(const int raw){std::cout << "setRawBits member fonction called" << std::endl;this->raw = raw;}
+int		Fixed::getRawBits(void) const{std::cout << "getRawBits member fonction called" << std::endl;return this->_raw;}
+void	Fixed::setRawBits(const int raw){std::cout << "setRawBits member fonction called" << std::endl;this->_raw = raw;}
